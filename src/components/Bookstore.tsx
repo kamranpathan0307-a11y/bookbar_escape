@@ -52,6 +52,8 @@ export function Bookstore() {
               width={1080}
               height={1440}
               loading="lazy"
+              decoding="async"
+              sizes="(max-width: 1024px) 100vw, 40vw"
               className="w-full h-full object-cover"
             />
           </div>
@@ -62,6 +64,8 @@ export function Bookstore() {
               width={800}
               height={1000}
               loading="lazy"
+              decoding="async"
+              sizes="18rem"
               className="w-full h-full object-cover"
             />
           </div>

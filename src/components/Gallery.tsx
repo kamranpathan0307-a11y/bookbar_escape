@@ -47,12 +47,16 @@ export function Gallery() {
             {tiles.map((t, i) => (
               <div
                 key={i}
-                className={`img-zoom relative overflow-hidden rounded-sm ${t.h}`}
+                className={`img-zoom relative overflow-hidden rounded-sm ${i > 3 ? "hidden md:block" : ""} ${t.h}`}
               >
                 <img
                   src={t.src}
                   alt={t.alt}
+                  width={900}
+                  height={700}
                   loading="lazy"
+                  decoding="async"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 ring-1 ring-inset ring-cream/10" />

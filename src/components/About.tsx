@@ -13,6 +13,8 @@ export function About() {
               width={1080}
               height={1440}
               loading="lazy"
+              decoding="async"
+              sizes="(max-width: 1024px) 50vw, 25vw"
               className="w-full h-full object-cover"
             />
           </div>
@@ -23,6 +25,8 @@ export function About() {
               width={1080}
               height={1440}
               loading="lazy"
+              decoding="async"
+              sizes="(max-width: 1024px) 50vw, 25vw"
               className="w-full h-full object-cover"
             />
           </div>

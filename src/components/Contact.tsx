@@ -58,12 +58,20 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="rounded-sm overflow-hidden border border-border min-h-[420px] relative bg-muted">
+        <div className="rounded-sm overflow-hidden border border-border min-h-[260px] md:min-h-[420px] relative bg-muted">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Koregaon+Park+Pune"
+            target="_blank"
+            rel="noreferrer"
+            className="flex min-h-[260px] items-center justify-center px-6 text-center font-serif text-2xl text-foreground md:hidden"
+          >
+            Open map to Bookbar, Koregaon Park
+          </a>
           <iframe
             title="Bookbar location"
             src="https://www.google.com/maps?q=Koregaon+Park+Pune&output=embed"
             loading="lazy"
-            className="w-full h-full min-h-[420px]"
+            className="hidden md:block w-full h-full min-h-[420px]"
             style={{ border: 0, filter: "grayscale(0.4) sepia(0.15) contrast(0.95)" }}
             referrerPolicy="no-referrer-when-downgrade"
           />

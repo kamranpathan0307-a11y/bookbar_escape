@@ -8,15 +8,17 @@ export function Hero() {
         alt="Cozy Bookbar interior with bookshelves and espresso bar"
         width={1920}
         height={1080}
+        decoding="async"
+        fetchPriority="high"
         className="absolute inset-0 w-full h-full object-cover scale-105"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-espresso/55 via-espresso/35 to-espresso/80" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(20,12,6,0.55)_100%)]" />
 
       {/* Floating ambient */}
-      <div className="absolute top-1/4 left-10 w-40 h-40 rounded-full bg-gold/20 blur-3xl float-slow" />
+      <div className="absolute top-1/4 left-10 w-40 h-40 rounded-full bg-gold/20 blur-3xl float-slow hidden md:block" />
       <div
-        className="absolute bottom-1/3 right-16 w-56 h-56 rounded-full bg-coffee/30 blur-3xl float-slow"
+        className="absolute bottom-1/3 right-16 w-56 h-56 rounded-full bg-coffee/30 blur-3xl float-slow hidden md:block"
         style={{ animationDelay: "2s" }}
       />
 

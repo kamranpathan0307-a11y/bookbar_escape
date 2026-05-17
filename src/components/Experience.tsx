@@ -9,6 +9,8 @@ export function Experience() {
         width={1920}
         height={1080}
         loading="lazy"
+        decoding="async"
+        sizes="100vw"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-espresso/85 via-espresso/60 to-transparent" />

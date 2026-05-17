@@ -200,4 +200,62 @@
     height: 1px;
     background: linear-gradient(to right, transparent, color-mix(in oklab, var(--coffee) 40%, transparent), transparent);
   }
+
+  section:not(#top) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+  }
+
+  @media (max-width: 767px) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    .glass,
+    .glass-dark {
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+
+    .grain::after {
+      display: none;
+    }
+
+    .reveal,
+    .float-slow {
+      animation: none;
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+
+    .hover-lift,
+    .img-zoom img {
+      transition: none;
+    }
+
+    .hover-lift:hover,
+    .img-zoom:hover img {
+      transform: none;
+      filter: none;
+      box-shadow: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }

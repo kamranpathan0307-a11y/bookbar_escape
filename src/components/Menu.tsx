@@ -105,6 +105,8 @@ export function Menu() {
                     width={1200}
                     height={900}
                     loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-espresso/70 via-transparent to-transparent" />
